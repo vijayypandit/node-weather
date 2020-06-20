@@ -19,8 +19,7 @@ const url = 'http://api.weatherstack.com/current?access_key=21d8bfb4a44411f11f52
                 else{
                     //.current
                             //run the final correct code
-                            
-                    callback(undefined, body.current.weather_descriptions[0] + '   And  It is currently  '+body.current.temperature + '  degree  . ')
+                    callback(undefined, body.current.weather_descriptions[0] + '   and  It is currently  '+body.current.temperature + '  degree Temperature. It Feels lke '+body.current.feelslike + ' degrees out . The Humidity is ' + body.current.humidity +'% . Visiblity is '+body.current.visibility +' km')
                 }
 
 
