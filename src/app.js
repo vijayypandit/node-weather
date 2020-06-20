@@ -36,8 +36,7 @@ app.get('/about',(req,res)=>{
 
     res.render('about',{
         title:'About ',
-        name:'vijay',
-        aboutMsg:'This is a weather app to show forecast about weather based on location details'
+        name:'vijay'
 
     })
 })
@@ -57,7 +56,7 @@ name:'vijay'
             if(!req.query.address){
 
             return res.send({
-                error:'You must provide the address  ... '
+                error:' oops !!! You must provide the address in the search section ... '
             })
             }
 

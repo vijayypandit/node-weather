@@ -13,13 +13,14 @@ const url = 'http://api.weatherstack.com/current?access_key=21d8bfb4a44411f11f52
 
                 }
                 else if(body.error){
-callback('Unable to find the location  ...',undefined)
+                        callback('Unable to find the location  ...',undefined)
 
                 }
                 else{
                     //.current
                             //run the final correct code
-                    callback(undefined, body.current.weather_descriptions[0] + '   And  It is currently  '+body.current.temperature + '  degree ')
+                            
+                    callback(undefined, body.current.weather_descriptions[0] + '   And  It is currently  '+body.current.temperature + '  degree  . ')
                 }
 
 
